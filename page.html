@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Application web de stéganographie</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <h1>Application web de stéganographie</h1>
+  <p>Cette application vous permet d'encoder ou de décoder un message caché derrière une image.</p>
+  <form id="form">
+    <div class="radio">
+      <input type="radio" id="encode" name="mode" value="encode" checked>
+      <label for="encode">Encoder</label>
+      <input type="radio" id="decode" name="mode" value="decode">
+      <label for="decode">Décoder</label>
+    </div>
+    <div class="input">
+      <label for="message">Message :</label>
+      <input type="text" id="message" name="message" placeholder="Entrez votre message secret ici" required>
+    </div>
+    <div class="input">
+      <label for="image">Image :</label>
+      <input type="file" id="image" name="image" accept="image/*" required>
+    </div>
+    <div class="button">
+      <button type="submit" id="submit">Envoyer</button>
+    </div>
+  </form>
+  <div id="result"></div>
+  <script src="script2.js"></script>
+</body>
+</html>
